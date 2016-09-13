@@ -160,6 +160,8 @@ int main(void){
   EnableInterrupts();
   while(1){
     PF1 ^= 0x02;  // toggles when running in main
+		//GPIO_PORTF_DATA_R ^= 0x02;  // toggles when running in main
+		//PF1 = (PF1*12345678)/1234567+0x02;  // causing jitter
 		if (counter >= 1000){	//if array is full
 			//calculate jitter
 			uint32_t small = TvalArray[1] - TvalArray[0];
