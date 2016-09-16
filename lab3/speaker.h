@@ -1,3 +1,6 @@
+#include <stdint.h>
 
-void portDInit(void;
+
+
+void portDInit(void);
 

@@ -456,11 +456,6 @@
               <FilePath>.\Switch.h</FilePath>
             </File>
             <File>
-              <FileName>SwitchTestMain.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\SwitchTestMain.c</FilePath>
-            </File>
-            <File>
               <FileName>speaker.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\speaker.c</FilePath>
@@ -469,6 +464,11 @@
               <FileName>speaker.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\speaker.h</FilePath>
+            </File>
+            <File>
+              <FileName>SysTick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SysTick.c</FilePath>
             </File>
           </Files>
         </Group>

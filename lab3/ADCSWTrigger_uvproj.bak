@@ -465,6 +465,11 @@
               <FileType>1</FileType>
               <FilePath>.\speaker.c</FilePath>
             </File>
+            <File>
+              <FileName>speaker.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\speaker.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

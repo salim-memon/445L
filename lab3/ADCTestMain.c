@@ -31,10 +31,34 @@
 // bottom of X-ohm potentiometer connected to ground
 // top of X-ohm potentiometer connected to +3.3V 
 #include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "ADCSWTrigger.h"
 #include "tm4c123gh6pm.h"
 #include "PLL.h"
 #include "Timer1.h"
+#include "Switch.h"
+#include "ST7735.h"
+#include "SysTick.h"
+#include "speaker.h"
+
+
+#define PF0       (*((volatile uint32_t *)0x40025004))
+#define PF1       (*((volatile uint32_t *)0x40025008))
+#define PF2       (*((volatile uint32_t *)0x40025010))
+#define PF3       (*((volatile uint32_t *)0x40025020))
+#define PF4       (*((volatile uint32_t *)0x40025040))
+#define LEDS      (*((volatile uint32_t *)0x40025038))
+#define RED       0x02
+#define BLUE      0x04
+#define GREEN     0x08
+#define SWITCHES  (*((volatile uint32_t *)0x40025044))
+#define SW1       0x10                      // on the left side of the Launchpad board
+#define SW2       0x01                      // on the right side of the Launchpad board
+
+
+
 
 #define ADC_MaxValue 4095
 #define PF2             (*((volatile uint32_t *)0x40025010))
@@ -145,19 +169,50 @@ void ADCvalues(void){
 
 int main(void){
 	uint32_t jitter = 0;
-  PLL_Init(Bus80MHz);                   // 80 MHz
-  SYSCTL_RCGCGPIO_R |= 0x20;            // activate port F
+  PLL_Init(Bus80MHz);   	// 80 MHz
+	portDInit();
+//  SYSCTL_RCGCGPIO_R |= 0x20;            // activate port F
   ADC0_InitSWTriggerSeq3_Ch9();         // allow time to finish activating
   Timer0A_Init100HzInt();								// set up Timer0A for 100 Hz interrupts
 	Timer1_Init();
-  GPIO_PORTF_DIR_R |= 0x06;             // make PF2, PF1 out (built-in LED)
-  GPIO_PORTF_AFSEL_R &= ~0x06;          // disable alt funct on PF2, PF1
-  GPIO_PORTF_DEN_R |= 0x06;             // enable digital I/O on PF2, PF1
-                                        // configure PF2 as GPIO
-  GPIO_PORTF_PCTL_R = (GPIO_PORTF_PCTL_R&0xFFFFF00F)+0x00000000;
-  GPIO_PORTF_AMSEL_R = 0;               // disable analog functionality on PF
-  PF2 = 0;                      // turn off LED
+//  GPIO_PORTF_DIR_R |= 0x06;             // make PF2, PF1 out (built-in LED)
+//  GPIO_PORTF_AFSEL_R &= ~0x06;          // disable alt funct on PF2, PF1
+//  GPIO_PORTF_DEN_R |= 0x06;             // enable digital I/O on PF2, PF1
+//                                        // configure PF2 as GPIO
+//  GPIO_PORTF_PCTL_R = (GPIO_PORTF_PCTL_R&0xFFFFF00F)+0x00000000;
+//  GPIO_PORTF_AMSEL_R = 0;               // disable analog functionality on PF
+//  PF2 = 0;                      // turn off LED
   EnableInterrupts();
+	
+	//from switch test main
+	
+	
+	Switch_Init();           // PA5 is input
+//  status = Switch_Input(); // 0x00 or 0x20
+//  status = Switch_Input(); // 0x00 or 0x20
+	Board_Init();             // initialize PF0 and PF4 and make them inputs
+                            // make PF3-1 out (PF3-1 built-in LEDs)
+  GPIO_PORTF_DIR_R |= (RED|BLUE|GREEN);
+                              // disable alt funct on PF3-1
+  GPIO_PORTF_AFSEL_R &= ~(RED|BLUE|GREEN);
+                              // enable digital I/O on PF3-1
+  GPIO_PORTF_DEN_R |= (RED|BLUE|GREEN);
+                              // configure PF3-1 as GPIO
+  GPIO_PORTF_PCTL_R = (GPIO_PORTF_PCTL_R&0xFFFF000F)+0x00000000;
+  GPIO_PORTF_AMSEL_R = 0;     // disable analog functionality on PF
+	
+//	while(1){
+//    status = Board_Input();
+//    switch(status){                    // switches are negative logic on PF0 and PF4
+//      case 0x01: LEDS = BLUE; break;   // SW1 pressed
+//      case 0x10: LEDS = RED; break;    // SW2 pressed
+//      case 0x00: LEDS = GREEN; break;  // both switches pressed
+//      case 0x11: LEDS = 0; break;      // neither switch pressed
+//      default: LEDS = (RED|GREEN|BLUE);// unexpected return value
+//    }
+//  }
+	
+	// end of switch test main
   while(1){
     PF1 ^= 0x02;  // toggles when running in main
 		//GPIO_PORTF_DATA_R ^= 0x02;  // toggles when running in main
@@ -174,6 +229,8 @@ int main(void){
 					large = delta;
 			}
 			jitter = large-small;
+			
+			
 			// this is where we process the data recordings
 			
 			ADCvalues();
