@@ -1,3 +1,0 @@
-
-void portDInit(void);
-
