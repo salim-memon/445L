@@ -1,0 +1,13 @@
+.\lcdscreen.o: LCDscreen.c
+.\lcdscreen.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\lcdscreen.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+.\lcdscreen.o: C:\Keil\ARM\ARMCC\bin\..\include\stdlib.h
+.\lcdscreen.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
+.\lcdscreen.o: Timer0A.h
+.\lcdscreen.o: tm4c123gh6pm.h
+.\lcdscreen.o: PLL.h
+.\lcdscreen.o: Switch.h
+.\lcdscreen.o: SysTick.h
+.\lcdscreen.o: speaker.h
+.\lcdscreen.o: ST7735.h
+.\lcdscreen.o: Switch.h
