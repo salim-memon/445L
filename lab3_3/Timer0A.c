@@ -158,6 +158,10 @@ void Timer0A_Handler(void){
 	PF2 ^= 0x04;
 	seconds += 1;
 	secondsCounter();
+	if(digiOrAna==0)	//call type of display based on request
+		DisplayTime();
+	else
+		DisplayAnalogTime();
 		// dealing with sounding the alarm or not
 	if(alarm_seconds==seconds&alarm_minutes==minutes&alarm_hours==hours)
 		SpeakerToggle(alarm_On_Off);
