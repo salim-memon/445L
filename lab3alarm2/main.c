@@ -47,7 +47,7 @@ int main(void){
 	PortFInit();
 	ST7735_InitR(INITR_REDTAB);
 	Timer0A_Init(80000000);		// call handler every 1 second
-	PWM0A_Init(40000, 30000); //initialize pwm0, 1000 Hz, 75% duty
+	PWM0A_Init(65535, 30000); //initialize pwm0, 1000 Hz, 75% duty
 	PWM0_ENABLE_R &= ~0x01;
 	EnableInterrupts();
 	
