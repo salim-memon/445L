@@ -5,3 +5,4 @@
 .\player.o: Switch.h
 .\player.o: Systick.h
 .\player.o: Music.h
+.\player.o: Timer0A.h
