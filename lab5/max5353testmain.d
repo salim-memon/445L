@@ -1,0 +1,10 @@
+.\max5353testmain.o: MAX5353TestMain.c
+.\max5353testmain.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+.\max5353testmain.o: C:\Keil\ARM\ARMCC\bin\..\include\stdbool.h
+.\max5353testmain.o: tm4c123gh6pm.h
+.\max5353testmain.o: DAC.h
+.\max5353testmain.o: SysTick.h
+.\max5353testmain.o: Switch.h
+.\max5353testmain.o: PLL.h
+.\max5353testmain.o: Music.h
+.\max5353testmain.o: Timer0A.h
