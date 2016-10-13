@@ -1,0 +1,78 @@
+Design Consistency Status Report
+--------------------------------
+
+Report File:        C:\Users\salim\OneDrive\Pictures\lab6\Lab7_TM4C123starter (PCB - Design Consistency Status Report).txt
+Report Written:     Wednesday, October 12, 2016
+Design Path:        C:\Users\salim\OneDrive\Pictures\lab6\Lab7_TM4C123starter.pcb
+Design Title:       
+Created:            1/29/2013 12:01:41 AM
+Last Saved:         10/11/2016 12:44:49 PM
+Editing Time:       7816 min
+Units:              mil (precision 0)
+
+
+Checking integrity of Schematic "C:\Users\salim\OneDrive\Pictures\lab6\Lab7_TM4C123starter.sch" with PCB "C:\Users\salim\OneDrive\Pictures\lab6\Lab7_TM4C123starter.pcb"
+========================================================================================================================================================================
+
+The PCB and Schematic designs do not match.
+To bring them into line, you will need to make the following changes to the PCB design:
+
+Add Component "U5" [TLV5616]
+Add Component "R12" [0.25Wresistor]
+Add Component "R13" [0.25Wresistor]
+Add Component "R14" [0.25Wresistor]
+Add Component "U6" [LM4041]
+Add Component "R4" [0.25Wresistor]
+Add Component "R5" [0.125Wresistor]
+Add Component "R6" [0.25Wresistor]
+Add Component "R9" [0.25Wresistor]
+Add Component "Amp" [TPA731]
+Add Component "RF" [0.25Wresistor]
+Add Component "Spkr" [Speaker]
+Add Component "RI" [0.25Wresistor]
+Add Component "R8" [0.25Wresistor]
+
+Connect Pin U5-2 to Net "N0753"
+Connect Pin U5-3 to Net "GNE"
+Connect Pin U5-1 to Net "N0700"
+Connect Pin U5-4 to Net "N0754"
+Connect Pin U5-5 to Net "Analog Ground"
+Connect Pin U5-6 to Net "DAC Ref_In"
+Connect Pin U5-7 to Net "DACouu"
+Connect Pin U5-8 to Net "+3.3V"
+Connect Pin R12-1 to Net "+3.3V"
+Connect Pin R12-2 to Net "DAC Ref_In"
+Connect Pin R13-1 to Net "DAC Ref_In"
+Connect Pin R13-2 to Net "Diode_Ref"
+Connect Pin R14-1 to Net "Diode_Ref"
+Connect Pin R14-2 to Net "GNE"
+Connect Pin U6-2 to Net "DAC Ref_In"
+Connect Pin U6-1 to Net "Diode_Ref"
+Connect Pin U6-3 to Net "GNE"
+Connect Pin R4-1 to Net "GNF"
+Connect Pin R4-2 to Net "PE4"
+Connect Pin R5-1 to Net "GNF"
+Connect Pin R5-2 to Net "PE5"
+Connect Pin R6-1 to Net "GNF"
+Connect Pin R6-2 to Net "PE2"
+Connect Pin R9-1 to Net "GNF"
+Connect Pin R9-2 to Net "PE3"
+Connect Pin Amp-4 to Net "AmpIn-"
+Connect Pin Amp-2 to Net "AmpIn+"
+Connect Pin Amp-8 to Net "Speakes-"
+Connect Pin Amp-1 to Net "Gng"
+Connect Pin Amp-7 to Net "Gng"
+Connect Pin Amp-3 to Net "AmpIn+"
+Connect Pin Amp-6 to Net "+5W"
+Connect Pin Amp-5 to Net "Speakes+"
+Connect Pin RF-1 to Net "AmpIn-"
+Connect Pin RF-2 to Net "Speakes+"
+Connect Pin Spkr-1 to Net "Speakes+"
+Connect Pin Spkr-2 to Net "Speakes-"
+Connect Pin RI-1 to Net "AmpIn-"
+Connect Pin RI-2 to Net "N0712"
+Connect Pin R8-1 to Net "N0724"
+Connect Pin R8-2 to Net "N0725"
+
+
+End Of Report.

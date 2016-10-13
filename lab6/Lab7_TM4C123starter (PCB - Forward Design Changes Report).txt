@@ -1,0 +1,179 @@
+Forward Design Changes Report
+-----------------------------
+
+Report File:        C:\Users\salim\OneDrive\Pictures\lab6\Lab7_TM4C123starter (PCB - Forward Design Changes Report).txt
+Report Written:     Wednesday, October 12, 2016
+Design Path:        C:\Users\salim\OneDrive\Pictures\lab6\Lab7_TM4C123starter.pcb
+Design Title:       
+Created:            1/29/2013 12:01:41 AM
+Last Saved:         10/11/2016 12:44:49 PM
+Editing Time:       7816 min
+Units:              mil (precision 0)
+
+Disconnected pin "J3-1" from net "GND".
+Disconnected pin "J3-2" from net "GND".
+Disconnected pin "J3-3" from net "GND".
+Disconnected pin "J3-4" from net "GND".
+Disconnected pin "J3-5" from net "GND".
+Disconnected pin "J3-6" from net "GND".
+Disconnected pin "J3-7" from net "GND".
+Disconnected pin "J3-8" from net "GND".
+Disconnected pin "U1-17" from net "PA0".
+Disconnected pin "U1-19" from net "PA2".
+Disconnected pin "U1-20" from net "PA3".
+Disconnected pin "U1-21" from net "PA4".
+Disconnected pin "U1-22" from net "PA5".
+Disconnected pin "J4-5" from net "PA0".
+Disconnected pin "J4-6" from net "PA3".
+Disconnected pin "J4-7" from net "PA5".
+Disconnected pin "J4-8" from net "PA2".
+Disconnected pin "J4-9" from net "PA4".
+
+Added net "+3.3V".
+Added net "GNE".
+Added net "DAC Ref_In".
+Added net "Diode_Ref".
+Added net "Analog Ground".
+Added net "N0700".
+Added net "PE4".
+Added net "+3.3W".
+Added net "GNF".
+Added net "PE5".
+Added net "PE3".
+Added net "PE2".
+Added net "Gng".
+Added net "AmpIn+".
+Added net "AmpIn-".
+Added net "Speakes+".
+Added net "Speakes-".
+Added net "+5W".
+Added net "DACouu".
+Added net "N0712".
+Added net "N0713".
+Added net "N0714".
+Added net "N0715".
+Added net "Gnh".
+Added net "N0721".
+Added net "N0722".
+Added net "N0723".
+Added net "N0724".
+Added net "N0725".
+Added net "N0753".
+Added net "N0754".
+
+Error: Unable to add component reference "U5" of component "TLV5616", package "DIP" because Cannot find component "TLV5616"..
+Error: Unable to add component reference "R12" of component "0.25Wresistor", package "DIP" because Cannot find component "0.25Wresistor"..
+Error: Unable to add component reference "R13" of component "0.25Wresistor", package "DIP" because Cannot find component "0.25Wresistor"..
+Error: Unable to add component reference "R14" of component "0.25Wresistor", package "DIP" because Cannot find component "0.25Wresistor"..
+Error: Unable to add component reference "U6" of component "LM4041", package "MISC" because Cannot find component "LM4041"..
+Error: Unable to add component reference "R4" of component "0.25Wresistor", package "DIP" because Cannot find component "0.25Wresistor"..
+Error: Unable to add component reference "R5" of component "0.125Wresistor", package "MISC" because Cannot find component "0.125Wresistor"..
+Added component reference "SW1" of component "B3F-1050", package "DIP".
+Added value "Manufacturer=NO switch" to component reference "SW1".
+
+Added value "Manufacturer Part Number=" to component reference "SW1".
+
+Added value "Distributor=" to component reference "SW1".
+
+Added value "Distributor Part Number=" to component reference "SW1".
+
+Error: Unable to add component reference "R6" of component "0.25Wresistor", package "DIP" because Cannot find component "0.25Wresistor"..
+Added component reference "SW2" of component "B3F-1050", package "DIP".
+Added value "Manufacturer=NO switch" to component reference "SW2".
+
+Added value "Manufacturer Part Number=" to component reference "SW2".
+
+Added value "Distributor=" to component reference "SW2".
+
+Added value "Distributor Part Number=" to component reference "SW2".
+
+Added component reference "SW3" of component "B3F-1050", package "DIP".
+Added value "Manufacturer=NO switch" to component reference "SW3".
+
+Added value "Manufacturer Part Number=" to component reference "SW3".
+
+Added value "Distributor=" to component reference "SW3".
+
+Added value "Distributor Part Number=" to component reference "SW3".
+
+Error: Unable to add component reference "R9" of component "0.25Wresistor", package "DIP" because Cannot find component "0.25Wresistor"..
+Added component reference "SW4" of component "B3F-1050", package "DIP".
+Added value "Manufacturer=NO switch" to component reference "SW4".
+
+Added value "Manufacturer Part Number=" to component reference "SW4".
+
+Added value "Distributor=" to component reference "SW4".
+
+Added value "Distributor Part Number=" to component reference "SW4".
+
+Error: Unable to add component reference "Amp" of component "TPA731", package "SM" because Cannot find component "TPA731"..
+Error: Unable to add component reference "RF" of component "0.25Wresistor", package "DIP" because Cannot find component "0.25Wresistor"..
+Added component reference "CS" of component "tantalum", package "C".
+Changed value "V" on component reference "CS" to "0.47uF".
+Error: Unable to add component reference "Spkr" of component "Speaker", package "DIP" because Cannot find component "Speaker"..
+Error: Unable to add component reference "RI" of component "0.25Wresistor", package "DIP" because Cannot find component "0.25Wresistor"..
+Added component reference "CI" of component "tantalum", package "C".
+Changed value "V" on component reference "CI" to "0.47uF".
+Added component reference "CB" of component "tantalum", package "C".
+Changed value "V" on component reference "CB" to "4.7uF".
+Added component reference "D2" of component "LEDT1.75", package "SIP".
+Error: Unable to add component reference "R8" of component "0.25Wresistor", package "DIP" because Cannot find component "0.25Wresistor"..
+Added component reference "TP3" of component "testpoint", package "SIP".
+Added component reference "TP4" of component "testpoint", package "SIP".
+Added component reference "TP5" of component "testpoint", package "SIP".
+Added component reference "TP6" of component "testpoint", package "SIP".
+
+Connected pin "U1-22" to net "N0700".
+Connected pin "U1-21" to net "N0715".
+Connected pin "U1-20" to net "N0754".
+Connected pin "U1-19" to net "N0753".
+Connected pin "U1-18" to net "N0714".
+Connected pin "U1-17" to net "N0713".
+Connected pin "U1-6" to net "PE3".
+Connected pin "U1-7" to net "PE2".
+Connected pin "U1-8" to net "PE5".
+Connected pin "U1-9" to net "PE4".
+Connected pin "U1-30" to net "N0723".
+Connected pin "U1-29" to net "N0722".
+Connected pin "U1-28" to net "N0721".
+Connected pin "J4-6" to net "N0715".
+Connected pin "J4-7" to net "N0713".
+Connected pin "J4-8" to net "N0714".
+Connected pin "SW1-1" to net "PE4".
+Connected pin "SW1-3" to net "+3.3W".
+Connected pin "SW2-1" to net "PE5".
+Connected pin "SW2-3" to net "+3.3W".
+Connected pin "SW3-1" to net "PE2".
+Connected pin "SW3-3" to net "+3.3W".
+Connected pin "SW4-1" to net "PE3".
+Connected pin "SW4-3" to net "+3.3W".
+Connected pin "CS-1" to net "+5W".
+Connected pin "CS-2" to net "Gng".
+Connected pin "CI-1" to net "N0712".
+Connected pin "CI-2" to net "DACouu".
+Connected pin "CB-1" to net "AmpIn+".
+Connected pin "CB-2" to net "Gng".
+Connected pin "J3-16" to net "N0721".
+Connected pin "J3-15" to net "N0722".
+Connected pin "J3-14" to net "N0700".
+Connected pin "J3-13" to net "DACouu".
+Connected pin "J3-12" to net "Speakes-".
+Connected pin "J3-11" to net "Speakes+".
+Connected pin "J3-10" to net "DAC Ref_In".
+Connected pin "J3-1" to net "Gnh".
+Connected pin "J3-2" to net "Gnh".
+Connected pin "J3-3" to net "Gnh".
+Connected pin "J3-4" to net "Gnh".
+Connected pin "J3-5" to net "Gnh".
+Connected pin "J3-6" to net "Gnh".
+Connected pin "J3-7" to net "Gnh".
+Connected pin "J3-8" to net "Gnh".
+Connected pin "D2-2" to net "N0723".
+Connected pin "D2-1" to net "N0724".
+Connected pin "TP3-1" to net "PE3".
+Connected pin "TP4-1" to net "PE2".
+Connected pin "TP5-1" to net "PE4".
+Connected pin "TP6-1" to net "PE5".
+
+
+End Of Report.
