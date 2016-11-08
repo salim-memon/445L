@@ -460,6 +460,11 @@
               <FileType>5</FileType>
               <FilePath>.\PLL.h</FilePath>
             </File>
+            <File>
+              <FileName>calib.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\calib.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

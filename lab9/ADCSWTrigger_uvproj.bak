@@ -416,11 +416,6 @@
               <FilePath>.\ADCSWTrigger.c</FilePath>
             </File>
             <File>
-              <FileName>ADCTestMain.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\ADCTestMain.c</FilePath>
-            </File>
-            <File>
               <FileName>PLL.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\PLL.c</FilePath>
@@ -454,6 +449,16 @@
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>ADCSWTrigger.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ADCSWTrigger.h</FilePath>
+            </File>
+            <File>
+              <FileName>PLL.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\PLL.h</FilePath>
             </File>
           </Files>
         </Group>
